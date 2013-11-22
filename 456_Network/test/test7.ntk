@@ -1,0 +1,12 @@
+N 539.0 582.0 "Hawaii"
+N 157.0 486.0 "Cleveland"
+N 134.0 155.0 "SLC"
+N 636.0 390.0 "Central"
+C "Cleveland" T "Hawaii" B
+C "Cleveland" R "SLC" L
+C "Cleveland" L "Hawaii" L
+C "Hawaii" T "SLC" T
+C "SLC" R "Hawaii" R
+C "SLC" B "Cleveland" B
+C "Central" B "Cleveland" T
+C "Central" T "Hawaii" B

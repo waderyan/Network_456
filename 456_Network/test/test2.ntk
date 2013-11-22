@@ -1,0 +1,12 @@
+N 100 200 "Central"
+N 400 200 "Authentication"
+C "Central" R "Authentication" L
+N 600 600 "San_Fran"
+N 400 600 "SLC_Hub"
+N 200 600 "Master"
+C "San_Fran" L "Master" R
+C "Master" B "SLC_Hub" T
+C "Authentication" R "SLC_Hub" T
+C "Central" L "Master" L
+C "San_Fran" T "Central" R
+N 300 300 "Tacoma_Hub"

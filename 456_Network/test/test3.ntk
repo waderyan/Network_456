@@ -1,0 +1,18 @@
+N 150.0 97.0 "Cenasdfasdfasdfasdfasal"
+N 617.0 81.0 "Authentication"
+N 600.0 600.0 "San_Fran"
+N 539.0 348.0 "SLadfasC_Hub"
+N 200.0 600.0 "Master"
+N 205.0 212.0 "tester"
+N 232.0 384.0 "[node-name]"
+N 398.0 351.0 "[node-name]"
+N 342.0 244.0 "[node-name]"
+N 432.0 206.0 "[node-name]"
+N 415.0 133.0 "[node-name]"
+C "Cenasdfasdfasdfasdfasal" R "Authentication" L
+C "San_Fran" L "Master" R
+C "Master" B "SLadfasC_Hub" T
+C "Authentication" R "SLadfasC_Hub" T
+C "Cenasdfasdfasdfasdfasal" L "Master" L
+C "San_Fran" T "Cenasdfasdfasdfasdfasal" R
+C "Authentication" B "tester" T

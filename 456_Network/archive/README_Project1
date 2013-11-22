@@ -1,0 +1,11 @@
+To run:
+java -jar WadeAndersonProject1.jar test0
+java -jar WadeAndersonProject1.jar test1
+java -cp bin/ Network test0
+java -cp bin/ Network test1
+
+To test:
+java -cp bin/ NetworkModelTest
+
+To see tests:
+less src/model/NetworkModel.java

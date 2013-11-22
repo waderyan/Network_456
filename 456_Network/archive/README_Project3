@@ -1,0 +1,44 @@
+# To run:
+# Basic Test
+java -jar WadeAndersonProject3.jar test0
+
+# More advanced test
+java -jar WadeAndersonProject3.jar test1
+
+# Overlapping test
+java -jar WadeAndersonProject3.jar test2
+
+java -cp bin/ Network test0
+java -cp bin/ Network test1
+java -cp bin/ Network test2
+
+# Architecture for communication between MVC
+
+Model holds a list of listeners. Each time something
+changes in the model the model calls notifyListeners
+
+The View is a listener on the model. The view implements
+an update method. 
+	
+The update method in the view handles all changes from the model
+I chose to implement the listening mechanism this way because
+it provides the simplest way to handle multiple types of model updates.
+The alternative was to follow the catMoved example and implement
+a separate method for each type of model update in the view. 
+
+# Architecture for notification of changes to drawing objects
+
+The architecture for communicating changes to drawing objects
+is extremely simple. Each drawing object has a reference
+to its associated model object. When the view calls draw
+on the drawing object the drawing object queries the model
+object it references and draws accordingly. The view will 
+call draw every time it repaints on all of its drawing objects.
+This is a simple implementation. If the performance starts to be a 
+problem I can easily modify this to handle changes more robustly (meaning
+we can determine which objects need to be redrawn and only redraw those
+objects). The architecture is in place to handle this more robust method. I 
+would implement the more robust method by looking at the reference object
+in the ModelChangeType object which is being passed in the update method. 
+
+

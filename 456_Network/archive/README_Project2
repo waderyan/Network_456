@@ -1,0 +1,13 @@
+# To run:
+# Basic Test
+java -jar WadeAndersonProject2.jar test0
+
+# More advanced test
+java -jar WadeAndersonProject2.jar test1
+
+# Overlapping test
+java -jar WadeAndersonProject2.jar test2
+
+java -cp bin/ Network test0
+java -cp bin/ Network test1
+java -cp bin/ Network test2
